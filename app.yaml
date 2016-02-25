@@ -1,11 +1,7 @@
-application: monkey-king-tea
-runtime: php
+runtime: php55
 api_version: 1
 
-handlers:
-- url: /
-  static_files: index.html
-  
+handlers:  
 - url: /(.+\.(eot|ttf|woff|woff2)$
   static_files: fonts/\1
   upload: .+\.(eot|ttf|woff|woff2)$
@@ -23,3 +19,7 @@ handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  
+- url: /.*
+  upload: index.html
+  static_files: index.html

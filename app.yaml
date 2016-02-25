@@ -13,6 +13,9 @@ handlers:
 
 - url: /font-awesome
   static_dir: font-awesome
+ 
+- url: /js
+  static_dir: js
 
 - url: /.*
   upload: index.html

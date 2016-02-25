@@ -2,24 +2,18 @@ runtime: php55
 api_version: 1
 
 handlers:  
-- url: /(.+\.(eot|ttf|woff|woff2)$
-  static_files: fonts/\1
-  upload: .+\.(eot|ttf|woff|woff2)$
-  
-- url: /(.+\.(bmp|gif|ico|jpeg|jpg|png))$
-  static_files: img/\1
-  upload: .+\.(bmp|gif|ico|jpeg|jpg|png)$
-  application_readable: true
+- url: /css
+  static_dir: css
 
-- url: /(.*\.js)
-  mime_type: text/javascript
-  static_files: js/\1
-  upload: js/(.*\.js)
-  
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
-  
+- url: /img
+  static_dir: img
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /font-awesome
+  static_dir: font-awesome
+
 - url: /.*
   upload: index.html
   static_files: index.html

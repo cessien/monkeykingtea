@@ -5,6 +5,10 @@
  */
 
 /* Global Styles */
+@font-face {
+font-family: aguafina;
+src: url("/fonts/AguafinaScript-Regular.ttf");
+}
 
 html,
 body {
@@ -13,7 +17,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
@@ -25,7 +29,12 @@ h1 {
     display: table-cell;
     text-align: center;
     /*vertical-align: middle;*/
-    padding-top: 10%;
+    padding-top: 3%;
+}
+
+.letter {
+    font-family: aguafina;
+    font-size: 3em;
 }
 
 .text-vertical-center h1 {
@@ -166,6 +175,14 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+h3.title, h1.title {
+    font-weight: 100;
+}
+
+h2.title {
+    font-weight: 400;
 }
 
 /* About */

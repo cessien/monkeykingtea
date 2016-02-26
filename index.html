@@ -69,24 +69,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Simply delicious.</strong>
-                    </h4>
-                    <p>249 Highland Ave<br>Malden, MA 02148</p>
-                    <ul class="list-unstyled">
+                    <h4><strong>Simply delicious.</strong></h4>
+                    <p class="visible-sm">249 Highland Ave<br>Malden, MA 02148</p>
+                    <ul class="list-unstyled visible-sm">
                         <li><i class="fa fa-phone fa-fw"></i> (781) 321-5464</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:themonkeykingtea@gmail.com">themonkeykingtea@gmail.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
-                        <li>
+                        <li class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Find us!">
+                            <a href="https://www.google.com/maps/place/Monkey+King+Tea/@42.4220088,-71.0822909,17z/data=!3m1!4b1!4m2!3m1!1s0x89e37144affcd9d7:0x4738a25cf8716e2f"><i class="fa fa-map fa-fw fa-3x"></i></a>
+                        </li>
+                        <li  data-toggle="tooltip" data-placement="top" title="Like us!">
                             <a href="https://www.facebook.com/MonkeyKingTea"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
-                        <li>
+                        <li  data-toggle="tooltip" data-placement="top" title="Follow us!">
                             <a href="https://twitter.com/monkeykingtea"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
-                        <li>
+                        <li data-toggle="tooltip" data-placement="top" title="<3 us!">
                             <a href="https://www.instagram.com/monkeykingtea/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Email us!">
+                            <a href="mailto:themonkeykingtea@gmail.com"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
+                        </li>
+                        <li class="hidden-sm"  data-toggle="tooltip" data-placement="top" title="Call us!">
+                            <a href="tel:7813215464"><i class="fa fa-phone fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -115,6 +123,11 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+        
+    // Tooltip opt-in
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
     // Scrolls to the selected menu item on the page
     $(function() {

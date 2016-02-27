@@ -266,3 +266,18 @@ footer {
     border-top: 1px solid #ddd;
     box-shadow: 10px 0px 35px 1px rgba(0,0,0,0.45);
 }
+
+.social-icon  {
+	opacity: 0.5;
+	width: 55px;
+	padding-bottom:20px;
+	-webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.social-icon:hover {
+	opacity: 1;
+}
